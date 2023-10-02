@@ -14,7 +14,7 @@
 
 */
 #include<stdio.h>
-
+#define PI 3.14
 
 //////////////////////////////////////////////////////////
 //  
@@ -30,7 +30,6 @@
 float CalculateArea(float fValue)
 {
    auto float fAns = 0.0f;
-   auto const float PI = 3.14f;
 
 
     fAns = PI * fValue * fValue;
