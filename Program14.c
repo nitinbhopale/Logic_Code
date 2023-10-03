@@ -7,6 +7,17 @@ float CalculatePercentage(int iMarks, int iTotal)
 {
     auto float Percentage = 0.0f;
 
+    if((iMarks < 0) || (iTotal < 0))    // Filter
+    {
+        printf("Invalid Input\n");
+        return Percentage;
+    }
+    if(iMarks > iTotal) // Filter
+    {
+        printf("Invalid Input\n");
+        return Percentage;
+    } 
+
     Percentage = (((float)iMarks/(float)iTotal) * 100);
 
     return Percentage;
@@ -24,8 +35,9 @@ int main()
     printf("Enter the total Marks\n");
     scanf("%d",&iValue2);
 
+    
     fRet = CalculatePercentage(iValue1, iValue2);
-
+    
     printf("Your Percentage = %f\n",fRet);
 
     return 0;
