@@ -10,26 +10,30 @@
 
 #include<stdio.h>
 
-void DisplayClass(float iValue1)
+// Logical OR || -> If any of the condition is TRUE then it enters inside the if
+// Logical AND && -> If all of the condition are TRUE then it enters inside the if
+
+void DisplayClass(float fMarks)
 {
-    if(iValue1>100)
+    if(fMarks>100 || fMarks<0)
     {
         printf("Invalid Percentage\n");
     } else {
-        if(iValue1<35)
+        if((fMarks >=0.0)&&(fMarks<35.00))
         {
-            printf("Failed...");
+            printf("You are Fail..\n");
+
         }
-        else if(iValue1>35 && iValue1<49)
+        else if((fMarks>=35.00)&&(fMarks<50.00))
         {
-            printf("Pass (Third Class)");
-        } else if(iValue1>49 && iValue1<59)
+            printf("Pass (Third Class)\n");
+        } else if((fMarks>=50.00) &&(fMarks<60.00) )
         {
             printf("Second Class\n");
-        } else if(iValue1>59 && iValue1<74)
+        } else if((fMarks >= 60.00)&& (fMarks < 75.00))
         {
             printf("First Class\n");
-        } else{
+        } else if((fMarks>=75.00) && (fMarks <= 100.00)){
             printf("First Class with Distinction\n");
         }
     }
@@ -38,12 +42,16 @@ void DisplayClass(float iValue1)
 int main()
 {
     float fValue = 0.0f;
-
+    printf("=============================\n");
     printf("Enter Your Percentage\n");
+
+    printf("=============================\n");
     scanf("%f",&fValue);
 
+    printf("=============================\n");
     DisplayClass(fValue);
-
+    
+    printf("=============================\n");
 
     return 0;
 }
