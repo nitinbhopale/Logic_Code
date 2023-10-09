@@ -6,7 +6,7 @@ void Display(int iNo)
     int iCnt = 0;
     for(iCnt = 1;iCnt<=iNo;iCnt++)
     {
-        printf("Hello %d\n",iCnt);
+        printf("%d\n",iCnt);
     }
 }
 int main()
