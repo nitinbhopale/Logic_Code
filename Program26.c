@@ -1,24 +1,25 @@
-// print "Jay Ganesh " 5 times on screen
+//Accept the number from user and print "Jay Ganesh " no times on screen
 #include<stdio.h>
 
-void Display()
+
+int Display(int iNo)
 {   
     int iCnt = 0;
-    int iNo = 8;
+    
     //    1         2           3
     for(iCnt = 1; iCnt <= iNo ; iCnt++)
     {
-       printf("Jay Ganesh...\n");   // 4    
+        printf("Jay Ganesh\t\tJay Shree Mahakal\n"); // 4    
     }
-       
+    return 0;
 }
 
 int main()
 {
     int iValue = 0;
-    printf("Enter the Number\n");
+    printf("Enter number of times you want to display Jay Ganesh on Screen\n");
     scanf("%d",&iValue);
-    Display();
+    Display(iValue);
 
     return 0;
 }
