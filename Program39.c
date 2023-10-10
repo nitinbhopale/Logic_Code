@@ -8,6 +8,13 @@ bool CheckPerfect(int iNo)
 {
     int iSum = 0;
     int i = 0;
+
+    // Updator
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
     for(i = 1;i<=(iNo/2);i++)
     {
         if(iNo%i==0)
