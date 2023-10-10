@@ -1,26 +1,15 @@
 // Accept the input from user and print its factor
 #include<stdio.h>
-#include<stdbool.h>
 
-bool ChkFactor(int iNo1, int iNo2)
+void DisplayFactor(int iNo)
 {
-    if((iNo1%iNo2)==0)
+    int iCnt = 0;
+    printf("Factors of %d are : \n",iNo);
+    for(iCnt = 1;iCnt<=iNo/2;iCnt++)
     {
-        return true;
-    }
-    else 
-    {
-        return false;
-    }
-}
-void Factor(int iNo)
-{
-    int i = 1;
-    for(i = 1;i<=iNo/2;i++)
-    {
-        if(ChkFactor(iNo,i))
+        if((iNo%iCnt)==0)
         {
-            printf("%d\n",i);
+            printf("%d\n",iCnt);
         }
     }
 }
@@ -28,8 +17,11 @@ void Factor(int iNo)
 int main()
 {
     int iValue = 0;
+
     printf("Enter the Number\n");
     scanf("%d",&iValue);
-    Factor(iValue);
 
+    DisplayFactor(iValue);
+
+    return 0;
 }
