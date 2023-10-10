@@ -5,7 +5,7 @@
 bool CheckPrime(int iNo)
 {
     int iCnt = 0;
-    
+    bool bFlag = true;
     if(iNo < 0) // Updator
     {
         iNo = -iNo;
@@ -15,10 +15,11 @@ bool CheckPrime(int iNo)
     {
         if((iNo%iCnt)==0)
         {
-            return false;
+            bFlag = false;
+            break;
         }  
     }
-    return true;
+    return bFlag;
 }
 int main()
 {
