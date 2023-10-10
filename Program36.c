@@ -10,7 +10,7 @@ int FactorAddition(int iNo)
     {
         if(iNo%i==0)
         {
-            Ans += i;
+            Ans += i; // Ans = Ans + i
         }
     }
     return Ans;
