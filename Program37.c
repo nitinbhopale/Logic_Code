@@ -25,7 +25,7 @@ bool CheckPerfect(int iNo)
 }
 int main()
 {
-    int iValue = 0;
+    int iValue = 0; 
     bool bRet = false;
 
     printf("Enter the number\n");
