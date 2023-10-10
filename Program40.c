@@ -10,10 +10,10 @@ bool CheckPrime(int iNo)
     {
         iNo = -iNo;
     }
-
+          // 1          2       3
     for(iCnt = 2;iCnt<=(iNo/2);iCnt++)
     {
-        if((iNo%iCnt)==0)
+        if((iNo%iCnt)==0) // 4
         {
             bFlag = false;
             break;
