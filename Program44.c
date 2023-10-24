@@ -3,7 +3,7 @@
 void Display(int iNo)
 {
     int iDigit = 0;
-    while(iNo!=0)
+    while(iNo > 0)
     {
         iDigit = iNo % 10;
         printf("Digit is : %d\n",iDigit);
