@@ -26,6 +26,6 @@ int main()
 
     iRet = ReverseNumber(iValue);
 
-    printf("%d",iRet);
+    printf("Reverse Number is : %d\n",iRet);
     return 0;
 }
