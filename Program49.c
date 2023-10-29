@@ -18,14 +18,7 @@ bool CheckPalidrome(int iNo)
 
         iRev = iRev * 10 + iDigit;
     }
-    if(iCopy==iRev)
-    {
-        return true;
-    }
-    else 
-    {
-        return false;
-    }
+    return (iRev == iCopy);
 }
 
 int main()
@@ -37,7 +30,7 @@ int main()
 
     bRet = CheckPalidrome(iValue);
 
-    if(bRet == true)
+    if(bRet)
     {
         printf("%d is Palindrome number\n",iValue);
     } 
