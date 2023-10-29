@@ -5,6 +5,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+void Display(int *Arr, int iSize)
+{
+    for(int i=0;i<iSize;i++)
+    {
+        printf("%d\t",Arr[i]);
+    }
+    printf("\n");
+}
+
 int main()
 {
     int iCount = 0;
@@ -20,13 +29,8 @@ int main()
     {
         scanf("%d",&ptr[i]);
     }
-    printf("The Numbers are : \n");
-    for(int i = 0;i<iCount;i++)
-    {
-        printf("%d\t",ptr[i]);
-    }
-    
-    free(ptr); 
+  
+    Display(ptr, iCount); 
     
     return 0;
 }
