@@ -5,23 +5,27 @@
 #include<stdlib.h>
 
 // void DisplayNumbers(int *Arr, int iSize)
-void EvenDisplay(int Arr[], int iSize)
+int EvenCount(int Arr[], int iSize)
 {
-    printf("\nElements of the array are : \n");
-    for(int iCnt = 0;iCnt < iSize;iCnt++)
+    int iEvenCnt = 0;
+    
+    for(int iCnt = 0; iCnt < iSize;iCnt++)
     {
-        if(Arr[iCnt]%2==0)
+        if((Arr[iCnt]%2)==0)
         {
-         printf("%d\t",Arr[iCnt]);
+          iEvenCnt++;
         }
     }
     printf("\n");
+    return iEvenCnt;
 }
 int main()
 {
     int iCount = 0;
 
     int *ptr = NULL;
+
+    int iRet = 0;
 
     printf("Enter the number of element you want to store\n");
 
@@ -36,10 +40,11 @@ int main()
         printf("\n Enter the element no %d : ",iCnt+1);
         scanf("%d",&ptr[iCnt]);
     }
-    EvenDisplay(ptr, iCount);
+    
+    iRet = EvenCount(ptr, iCount);
 
+    printf("The Even number count is : %d\n",iRet);
     free(ptr);
 
-    printf("Dynamic memory gets deallocated succesfully..\n");
     return 0;
 }
