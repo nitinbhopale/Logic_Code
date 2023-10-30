@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+// void DisplayNumbers(int *Arr, int iSize)
 void DisplayNumbers(int Arr[], int iSize)
 {
+    printf("Elements of the array are : \n");
     for(int iCnt = 0;iCnt < iSize;iCnt++)
     {
         printf("%d\t",Arr[iCnt]);
@@ -19,7 +20,7 @@ int main()
 
     ptr = (int *)malloc(iSize * sizeof(int));
 
-    printf("Enter %d the Values\n",iSize);
+    printf("Enter %d  Values\n",iSize);
     for(int iCnt = 0;iCnt<iSize;iCnt++)
     {
         scanf("%d",&ptr[iCnt]);
@@ -27,5 +28,6 @@ int main()
     DisplayNumbers(ptr, iSize);
 
     free(ptr);
+
     return 0;
 }
