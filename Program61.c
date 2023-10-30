@@ -7,15 +7,12 @@
 
 float Average(int Arr[] , int iSize)
 {
-    float Average = 0.0f;
     int iSum = 0;
     for(int iCnt = 0;iCnt<iSize ;iCnt++)
     {
         iSum += Arr[iCnt];
     }
-
-    Average = (float )  iSum / iSize;
-    return Average;
+    return ((float )  iSum /  (float) iSize);
 }
 
 int main()
