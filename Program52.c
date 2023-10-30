@@ -5,7 +5,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void Display(int *Arr, int iSize)
+void Display(int Arr[], int iSize)
 {
     for(int i=0;i<iSize;i++)
     {
