@@ -11,6 +11,7 @@ void Display()
     {
         printf("*\t");
     }
+    printf("\n");
 }
 
 int main()
