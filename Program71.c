@@ -1,7 +1,7 @@
 /* 
-    number line pattern
+
     Input : 4
-    Output : -4 -3 -2 -1 0 1 2 3 4      
+    Output : 1 # 2 # 3 # 4 #       
      
 */
 
@@ -10,9 +10,9 @@
 void Display(int iNo)
 {
     
-    for(int i= -iNo;i<=iNo;i++)
+    for(int i= 1;i<=iNo;i++)
     {
-        printf("%d\t",i);
+        printf("%d\t#\t",i);
     } 
 }
 
