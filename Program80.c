@@ -2,9 +2,9 @@
     Pattern :   iRow = 3
                 iCol = 4 
 
-                1   1   1   1
-                1   1   1   1
-                1   1   1   1  
+                1   2   3   4
+                1   2   3   4   
+                1   2   3   4 
      
 */
 
@@ -17,7 +17,7 @@ void Display(int iRows, int iCols)
     {
         for(int j = 1; j<=iCols ;j++)
         {
-            printf("1\t");
+            printf("%d\t",j);
         }
         printf("\n");
     }
