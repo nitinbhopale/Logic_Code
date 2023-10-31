@@ -11,10 +11,10 @@ void Display(int iNo)
 {
     char ch = 'a';
 
-    for(int i=1;i<=iNo;i++)
+    for(int i=1;i<=iNo;i++,ch++)
     {
         printf("%c\t",ch);
-        ch++;
+        
     } 
 }
 
