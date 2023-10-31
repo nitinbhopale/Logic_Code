@@ -1,10 +1,13 @@
 /* 
-    Pattern :   iRow = 3
+    Pattern :   iRow = 4
                 iCol = 4 
 
-               1    1   1   1
-               2    2   2   2
-               3    3   3   3 
+      1  *   3   *
+      1  *   3   *
+      1  *   3   *
+      1  *   3   *
+
+        
      
 */
 
@@ -12,14 +15,20 @@
 
 void Display(int iRows, int iCols)
 {
-    
     for(int i = 1 ;i <= iRows; i++)
     {
         for(int j = 1; j<=iCols ;j++)
         {
-            printf("%d\t",i);
+           if((j%2)!=0)
+           {
+            printf("%d\t",j);
+           } 
+           else
+           {
+            printf("*\t");
+           }  
         }
-        printf("\n");
+        printf("\n\n");
     }
 }
 
