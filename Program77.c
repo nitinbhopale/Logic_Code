@@ -1,30 +1,28 @@
 /* 
 
-    Input  : 4
-    Output : A B C D     
+         
      
 */
 
 #include<stdio.h>
 
-void Display(int iNo)
+void Display()
 {
-    char ch = '\0';
-
-    for(int i=1, ch = 'A'; i<=iNo; i++, ch++)
+    for(int i = 1 ;i <= 3; i++)
     {
-        printf("%c\t",ch);
-    } 
+        for(int j = 1; j<=4 ;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
 }
 
 int main()
 {
-    int iValue = 0;
+    
 
-    printf("Enter the Count\n");
-    scanf("%d",&iValue);
-
-    Display(iValue);
+    Display();
 
     return 0;
 }
