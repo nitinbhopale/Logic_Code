@@ -1,12 +1,13 @@
 /* 
-    Pattern :   iRow = 4
-                iCol = 4 
+    Pattern :   iRow = 6
+                iCol = 6 
 
-      1  *   3   *
-      1  *   3   *
-      1  *   3   *
-      1  *   3   *
-    
+    *   *   *   *   *   *
+    *   $   $   $   $   *
+    *   $   $   $   $   *
+    *   $   $   $   $   *
+    *   $   $   $   $   *
+    *   *   *   *   *   *
 */
 
 #include<stdio.h>
@@ -17,14 +18,14 @@ void Display(int iRows, int iCols)
     {
         for(int j = 1; j<=iCols ;j++)
         {
-           if((j%2)!=0)
-           {
-            printf("%d\t",j);
-           } 
-           else
-           {
-            printf("*\t");
-           }  
+            if((i==1) || (i==iRows) || (j==1 ) || (j==iCols))
+            {
+                printf("*\t");
+            }
+            else 
+            {
+                printf("#\t");
+            }
         }
         printf("\n\n");
     }
