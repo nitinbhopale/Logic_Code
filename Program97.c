@@ -1,13 +1,13 @@
 /*
-    According character from user and check it capital or not 
+    According character from user and check it small or not 
 */
 #include<stdio.h>
 #include<stdbool.h>
 
-bool CheckCapital(char cValue)
+bool CheckSmall(char cValue)
 {
 
-    if((cValue >= 'A') && (cValue<='Z'))
+    if((cValue >= 'a') && (cValue<='z'))
     {
         return true;
     }
@@ -27,15 +27,15 @@ int main()
     printf("Enter the Character\n");
     scanf("%c",&ch);
 
-    bRet = CheckCapital(ch);
+    bRet = CheckSmall(ch);
 
     if(bRet == true)
     {
-        printf("Its a capital letter\n");
+        printf("Its a small letter\n");
     } 
     else 
     {
-        printf("Its not a capital letter\n");
+        printf("Its not a small letter\n");
     }
 
     return 0;
