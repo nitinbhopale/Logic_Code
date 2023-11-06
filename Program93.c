@@ -2,12 +2,12 @@
     Pattern :   iRow = 6
                 iCol = 6 
 
-    *   *   *   *   *   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
-    *   *   *   *   *   *
+    #   $   $   $   $   $
+    *   #   $   $   $   $
+    *   *   #   $   $   $
+    *   *   *   #   $   $
+    *   *   *   *   #   $
+    *   *   *   *   *   #
 */
 
 #include<stdio.h>
@@ -18,16 +18,12 @@ void Display(int iRows, int iCols)
     {
         for(int j = 1; j<=iCols ;j++)
         {
-            if((i==1) || (i==iRows) || (j==1 ) || (j==iCols))
-            {
+           if(i >= j)
+           {
                 printf("*\t");
-            }
-            else 
-            {
-                printf("$\t");
-            }
+           }
         }
-        printf("\n\n");
+        printf("\n");
     }
 }
 

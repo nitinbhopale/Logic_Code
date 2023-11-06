@@ -3,10 +3,10 @@
                 iCol = 6 
 
     *   *   *   *   *   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
-    *   $   $   $   $   *
+    *                   *
+    *                   *
+    *                   *
+    *                   *
     *   *   *   *   *   *
 */
 
@@ -24,7 +24,7 @@ void Display(int iRows, int iCols)
             }
             else 
             {
-                printf("$\t");
+                printf(" \t");
             }
         }
         printf("\n\n");
