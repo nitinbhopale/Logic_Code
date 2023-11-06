@@ -24,7 +24,7 @@ int main()
 
     iRet = CountSpace(Arr);
 
-    printf("Frequency of Vowel letter is : %d\n",iRet);
+    printf("Frequency of Space letter is : %d\n",iRet);
 
     return 0;
 }
