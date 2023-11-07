@@ -35,14 +35,14 @@ class String
         int CountCapital()
         {
             int iCnt = 0;
-            
-            while(*str != '\0')
+            char *temp = str;
+            while(*temp != '\0')
             {
-                if((*str >= 'A') && (*str <= 'Z'))
+                if((*temp >= 'A') && (*temp <= 'Z'))
                 {
                     iCnt++;
                 }
-                str++;
+                temp++;
             }
             return iCnt;
         }
