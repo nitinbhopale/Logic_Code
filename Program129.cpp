@@ -32,9 +32,11 @@ int main()
     cout<<"Enter the Numbers of Columns : "<<endl;
     cin>>iValue2;
 
-    Pattern pobj(iValue1, iValue2);
+    Pattern *pobj = new Pattern(iValue1, iValue2);
 
-    pobj.Display();
+    pobj->Display();
+
+    delete pobj;
     
     return 0;
 }
