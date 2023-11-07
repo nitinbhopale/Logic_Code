@@ -16,7 +16,7 @@ class Array
         {
             delete []Arr; 
         }
-
+        
     void Accept()   // Member Function
     {
         int iCnt = 0;
@@ -36,14 +36,25 @@ class Array
         }
         cout<<endl;
     }
-    //Logic
-
-
+    int AdditionEven()
+    {
+        int iCnt = 0;
+        int iSum  = 0;
+        for(iCnt = 0;iCnt<iSize;iCnt++)
+        {
+            if(Arr[iCnt]%2==0)
+            {
+                iSum = iSum + Arr[iCnt];
+            }
+        }
+        return iSum;
+    }
 }; //End of Class
 
 int main()
 {
     int iLength = 0;
+    int iRet  = 0;
     cout<<"Enter the number of elements that you want to store:"<<endl;
     cin>>iLength;
 
@@ -51,6 +62,10 @@ int main()
 
     aobj->Accept();
     aobj->Display();
+
+    iRet = aobj->AdditionEven();
+
+    cout<<"Addition of Even number: "<<iRet<<endl;
 
     delete aobj;
     return 0;
