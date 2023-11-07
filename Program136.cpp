@@ -31,15 +31,34 @@ class String
         {
             cout<<"String is : "<<str<<endl;
         }
+
+        int CountCapital()
+        {
+            int iCnt = 0;
+            
+            while(*str != 0)
+            {
+                if((*str >= 'A') && (*str <= 'Z'))
+                {
+                    iCnt++;
+                }
+                str++;
+            }
+            return iCnt;
+        }
 };
 int main()
 {
     String *sobj1 = new String(30);
-    String *sobj2 = new String();
+    
 
     sobj1->Accept();
     sobj1->Display(); 
 
+    int iRet = 0;
+
+    iRet = sobj1->CountCapital();
+    cout<<"The Capital Letter is : \t"<<iRet<<endl;
     delete sobj1;
     return 0;
 }
