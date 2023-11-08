@@ -61,6 +61,6 @@ int main()
     cout<<"The Capital Letter is : "<<iRet<<endl;
     
     sobj1 -> Display();
-   // delete sobj1;
+    delete sobj1;
     return 0;
 }
