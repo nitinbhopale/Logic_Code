@@ -30,6 +30,28 @@ void InsertFirst(PPNODE Head, int No)
     }
 }
 
+void InsertLast(PPNODE Head, int No)
+{
+    PNODE newn = NULL;
+    newn = (PNODE)malloc(sizeof(NODE));
+    newn->data = No;
+    newn->next = NULL;
+
+    PNODE temp = *Head;
+    if(*Head==NULL)
+    {
+        *Head = newn;
+    }
+    else
+    {
+        while(temp->next != NULL)
+        {
+           temp = temp->next;
+        }
+        temp->next = newn;
+    }
+}
+
 void Display(PNODE Head)
 {
     printf("Contents of Linked List : \n");
@@ -61,6 +83,8 @@ int main()
     InsertFirst(&First,51);
     InsertFirst(&First,21);
     InsertFirst(&First,11);
+
+    InsertLast(&First,121);
     
     Display(First);
     iRet = Count(First);
